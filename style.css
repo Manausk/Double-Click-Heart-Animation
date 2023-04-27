@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  background: #424242b5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 420px;
+  width: 320px;
+  background-image: url("img.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.container .heart {
+  position: absolute;
+  font-size: 40px;
+  color: red;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.heart.active {
+  animation: animate 0.61s linear forwards;
+}
+
+@keyframes animate {
+  30% {
+    opacity: 1;
+    font-size: 70px;
+  }
+  50% {
+    opacity: 1;
+    font-size: 50px;
+  }
+  70% {
+    opacity: 1;
+    font-size: 60px;
+  }
+  80% {
+    opacity: 1;
+    font-size: 50px;
+  }
+  90% {
+    opacity: 1;
+    font-size: 50px;
+  }
+}
