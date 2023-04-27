@@ -4,7 +4,6 @@ heartIcon = document.querySelector(".heart");
 image.addEventListener("dblclick", (e) => {
   let xValue = e.clientX - e.target.offsetLeft;
   let yValue = e.clientY - e.target.offsetTop;
-  console.log(xValue, yValue);
 
   heartIcon.style.left = `${xValue}px`;
   heartIcon.style.top = `${yValue}px`;
